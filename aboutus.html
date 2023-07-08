@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+<!-- for Bootstap-->     
+<link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
+    
+<!-- For moving image-->
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+      
+
+<style>
+    
+    
+    
+    
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: lightgray;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+        
+}
+    
+    .row{
+        justify-content: center;
+    }
+    
+    .containeraboutus {
+        margin-left:70px;
+        margin-right: 70px;
+    } 
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+    
+ 
+    
+
+    
+    
+.navbar-custom {
+     background-color: #3b3b3b;
+     height: 100px;
+          }
+    
+.nav-link{
+     color: white;
+          }
+.footer-dark {
+  padding:50px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-dark ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity:0.8;
+}
+    
+.footer-dark .item.text {
+  margin-bottom:36px;
+}    
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .item.social {
+  text-align:center;
+}
+    
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity:0.9;
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}  
+    
+@media (max-width:991px) {
+.footer-dark .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+
+@media (max-width:767px) {
+.footer-dark .item.text {
+    margin-bottom:0;
+  }
+}    
+@media (max-width:767px) {
+.footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+    .containeraboutimagea{
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-right:50px ;
+        padding-top:20px; 
+    }
+.line {
+     background-color: rgb(234, 46, 71);
+     top: 50px;
+     width: 100%;
+     height: 2.3px;
+          }
+    
+</style>
+</head>
+<body>
+    
+    
+
+<!-- nav-bar start-->    
+
+<nav class=" navbar navbar-expand-lg navbar-custom ">
+  <div class="container-fluid">
+      
+    <a class="navbar-brand" href="#"><img src="logo-charity.png"></a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        
+          <span class="navbar-toggler-icon"></span>
+          
+      </button>
+      
+        <div class="topnav-right">
+            
+           <div class="collapse navbar-collapse" id="navbarNav">
+               
+               <ul class="navbar-nav">
+                   
+                  <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                  </li>
+                   
+                  <li class="nav-item">
+                     <a class="nav-link" href="aboutus.html">ABOUT US</a>
+                  </li>
+                   
+                  <li class="nav-item">
+                     <a class="nav-link" href="start_fundraise.html">START A FUNDRAISER</a>
+                  </li>
+                   
+                   <li class="nav-item">
+                     <a class="nav-link" href="contact.html">CONTACTS</a>
+                  </li>
+                   
+                  <li class="nav-item">
+                     <a class="nav-link " href="donate.html" tabindex="-1" aria-disabled="true">DONATE</a>
+                  </li>   
+              </ul>
+               
+          </div> 
+            
+      </div>
+      
+  </div>
+    
+</nav>
+     
+<!-- nav-bar end -->    
+    <!-- line start -->
+    
+      <div class="line"></div>
+    
+<!-- line end -->  
+    <div><img src="abt.png" width="1600pxl"></div>
+ 
+    
+      <h1 style=" color: green; text-align:center"> Our Vision</h1>
+
+<div class="containeraboutimagea">   
+    
+    
+    <img src="about-vision-1.jpg" style="float:right ; margin-left: 50px;">
+         
+<p style="text-align: justify; font-size: 25px; margin-left: 20px; margin-right: 200px; ">
+            Work as a catalyst in bringing sustainable change in the lives of underprivileged children, youth and women, with a life-cycle approach of development. Enable the civil society across the world to engage proactively in the change process through the philosophy of civic driven change. Adopt highest standards of governance to emerge as a leading knowledge and technology driven, innovative and scalable international development organization.
+</p>
+ 
+</div> 
+    
+    <h1 style=" color: green; text-align: center"> Believes</h1>
+    <div class="containeraboutimagea">   
+    
+    
+    <img src="about-belief-1.jpg" style="float:left; margin-left: 50px;margin-right: 50px;margin-bottom:10px;">
+         
+<p style="text-align: justify; font-size: 25px; margin-left: 20px; margin-right: 10px; ">
+            Work as a catalyst in bringing sustainable change in the lives of underprivileged children, youth and women, with a life-cycle approach of development. Enable the civil society across the world to engage proactively in the change process through the philosophy of civic driven change. Adopt highest standards of governance to emerge as a leading knowledge and technology driven, innovative and scalable international development org. Credibility and accountability have always been the bench mark for Charity Life and are achieved through the promotion of principles of good governance in the processes and practices.
+</p>
+ 
+</div>  
+    
+    <h1 style=" color: green; text-align: center">  Our Mission</h1>
+    <div class="containeraboutimagea">   
+    
+    
+    <img src="about-mission-1.jpg" style="float:right ; margin-left: 50px;">
+         
+<p style="text-align: justify; font-size: 25px; margin-left: 20px; margin-right: 200px; ">
+   Charity Life, a non-profit organization in India is to empower underprivileged children, youth and women through relevant education, innovative healthcare and market-focused livelihood programs. Foundation is to deploy best possible methodology and technology for achieving ideal SROI (social return on investment), to practice and promote good governance. To link business competitiveness of the corporate with social development initiatives; also, to sensitize privileged children, youth and citizens in general to promote Civic Driven Change.
+        </p>
+    
+ 
+</div>  
+    
+    
+ <br> <br><br>  
+<h2 style="text-align:center">Our Team</h2>
+    
+    <div class="containeraboutus ">
+    
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="ankit.png" style="width:80%">
+      <div class="container">
+        <h2>Ankit</h2>
+        <p class="title">CEO & Founder</p>
+        <p>ankitsingla34804@gmail.com</p>
+        <p><a href="mailto:ankitsingla34804@gmail.com"><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="DD.png" style="width:80%">
+      <div class="container">
+        <h2>Divyanshu Darolia</h2>
+        <p class="title">Co-founder</p>
+        <p>daroliadivyanshu45@gmail.com</p>
+        <p><a href="mailto:daroliadivyanshu45@gmail.com"><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="sahil.png" style="width:80%">
+      <div class="container">
+        <h2>Sahil</h2>
+        <p class="title">Manager</p>
+        <p>sahils17sam@gmail.com</p>
+        <p><a href="mailto:"><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+</body>
+<!-- line start -->
+    
+      <div class="line"></div>
+    
+<!-- line end -->    
+    
+<!--footer start-->
+ 
+<div class="footer-dark">
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6 col-md-3 item">
+                  <h3>Get to know us</h3>
+                  <ul>
+                      
+                      <li><a href="aboutus.html">About Us</a></li>
+                      <li><a href="#">Carrers</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 item">
+                  <h3>Connect with us</h3>
+                  <ul>
+                      <li><a href="contact.html">Contact us</a></li>
+                      <li><a href="#">Help center</a></li>
+                      
+                  </ul>
+              </div>
+             <div class="col-sm-6 col-md-3 item">
+                  <h3>Charity Life quote</h3>
+                  <ul>
+                      <li>You have not lived today until you have done something for someone who can never repay you</li>
+                  </ul>
+              </div>
+              
+              <div class="col item social"><a href="https://www.facebook.com/" target="_blank"><img src="fb.jfif" height="40pxl"></a>
+                <a href="https://twitter.com/CharitylifeK" target="_blank"><img src="twitter.png" height="40pxl"></a><a href="https://www.instagram.com/charitylife.krm/" target="_blank"><img src="insta.jfif" height="40pxl"></a></div>
+          </div>
+          <p class="copyright">Charity Life Donations through this platform are tax exempted under 80G and 501(c)(3)</p>
+
+          
+          <div class="row">
+              <div class="col-sm-6 col-md-3 item">
+                  <h3></h3>
+                  <ul>
+                      <li><a href="#"></a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 item">
+                  <h3></h3>
+                  <ul>
+                      <li><a href="term.html">Terms and Conditions</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 item">
+                  <h3></h3>
+                  <ul>
+                      <li><a href="privacy.html">Privacy policy</a></li>
+                  </ul>
+              </div>
+          </div>
+                
+      </div>
+  </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>    
+
+<!-- footer end -->  
+
+</html>
